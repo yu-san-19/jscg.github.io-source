@@ -1,0 +1,53 @@
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto text-center">
+        <h5>Social Links</h5>
+        <ul class="list-inline text-center social-links">
+          {%- if site.twitter_username -%}
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+              <a href="https://twitter.com/{{ site.twitter_username }}">
+                <i class="fab fa-twitter fa-3x"></i>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if site.facebook_username -%}
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+              <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                <span class="fa-stack fa-lg">
+                  <i class="fab fa-facebook fa-3x"></i>
+                </span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if site.instagram_username -%}
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="Instagram">
+              <a href="https://www.instagram.com/{{ site.instagram_username }}">
+                  <i class="fab fa-instagram fa-3x"></i>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if site.github_username -%}
+            <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="GitHub">
+              <a href="https://github.com/{{ site.github_username }}">
+                <i class="fab fa-github fa-3x"></i>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if site.email -%}
+            <li class="list-inline-item">
+              <a href="mailto:{{ site.email }}">
+                <i class="fas fa-envelope fa-3x"></i>
+              </a>
+            </li>
+          {%- endif -%}
+        </ul>
+        <p>このサイトは Jekyll を使って生成し、 Github Pages を使ってホスティングしています。<br/>
+        このサイトが使用しているJekyll テーマ・プラグイン は全て <a href="https://github.com/Junior-Social-Creator-Group/jscg.github.io-source/">Github</a> にて公開されています！</p>
+
+        <p class="copyright">Copyright &copy; {{ site.auther }} 2018</p>
+      </div>
+    </div>
+  </div>
+</footer>
